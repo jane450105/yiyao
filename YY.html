@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script>
+        //JavaScript代码
+        alert('提交预约之后，在当天我们信息提醒您前往医院就诊！')
+    </script>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<video autoplay loop muted playsinline id="video-background">  
+  <source src="D:\比赛\my-video.mp4" type="video/mp4">  
+  Your browser does not support the video tag.  
+</video>  
+<style> 
+  body, html {  
+      margin:center;
+      padding: 0;  
+      overflow: hidden; /* 隐藏滚动条 */  
+  }  
+    
+  #video-background {  
+      position: fixed;  
+      right: 0;  
+      bottom: 0;  
+      min-width: 100%;   
+      min-height: 100%;  
+      width: auto;  
+      height: auto;  
+      z-index: -100;  
+      background-size: cover;  
+      overflow: hidden;  
+  }  
+    
+  .content {  
+      position: relative;  
+      z-index: 1;  
+      padding: 20px;  
+      color: white; /* 根据视频内容选择合适的文字颜色 */  
+      text-align: center;  
+  }
+    </style> 
+    <style>
+    #login_box {
+        width: 20%;
+        height: 400px;
+        background-color: rgba(217, 229, 230, 0.376);
+        margin: auto;
+        margin-top: 10%;
+        text-align: center;
+        border-radius: 10px;
+        padding: 50px 50px;
+      }
+  
+      h2 {
+        color: #ffffff90;
+        margin-top: 5%;
+      }
+  
+      #input-box {
+        margin-top: 5%;
+      }
+  
+      span {
+        color: #fff;
+      }
+  
+      input {
+        border: 0;
+        width: 60%;
+        font-size: 15px;
+        color: #fff;
+        background: transparent;
+        border-bottom: 2px solid #fff;
+        padding: 5px 10px;
+        outline: none;
+        margin-top: 10px;
+      }
+  
+      button {
+        margin-top: 50px;
+        width: 60%;
+        height: 30px;
+        border-radius: 10px;
+        border: 0;
+        color: hsl(0, 0%, 100%);
+        text-align: center;
+        line-height: 30px;
+        font-size: 15px;
+        background-image: linear-gradient(to right, #30cfd0, #5291d8);
+      }
+  
+      #sign_up {
+        margin-top: 45%;
+        margin-left: 60%;
+      }
+  
+      a {
+        color: #b94648;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="login_box">
+    <h1>医院预约挂号</h1>
+    <form action="日历\index.html" method="post">
+        
+        <label for="name">姓名：</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="phone">手机号码：</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+        
+        <label for="department">科室：</label>
+        <select id="department" name="department">
+            <option value="内科">内科</option>
+            <option value="外科">外科</option>
+            <option value="神经科">神经科</option>
+            <option value="口腔科">口腔科</option>
+            <option value="骨科">骨科</option>
+            <option value="妇产科">妇产科</option>
+            <option value="儿科">儿科</option>
+        </select><br><br>
+    
+        <label for="date">日期：</label>
+        <input type="date" id="date" name="date" required><br><br>
+     
+        <input type="submit" value="提交">
+    <link rel="stylesheet" href="styles.js">
+    </form>
+</div>
+</body>
+</html>
